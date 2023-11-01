@@ -80,7 +80,7 @@ jobs:
           OUT_FILE="${RELEASE_DIR}/csvjson-${PLATFORM}${EXTENSION}"
           echo "Creating ${OUT_FILE} (${RELEASE_VERSION})"
           go build \
-            -ldflags "-X github.com/pastdev/csvjson/pkg/cmd.version=$RELEASE_VERSION" \
+            -ldflags "-X github.com/pastdev/csvjson/cmd/csvjson/version.version=$RELEASE_VERSION" \
             -o "${OUT_FILE}" \
             ./cmd/csvjson
 
